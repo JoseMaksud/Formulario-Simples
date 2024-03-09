@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em HTML5</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <div class="grupo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" class="texto" id="nome">
+                </div>
+                <div class="grupo">
+                    <label for="nasc">Nascimento:</label>
+                    <input type="date" id="nasc" class="data">
+                </div>
+                <div class="grupo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" placeholder="Digite seu endereço" class="texto" id="endereco">
+                </div>
+                <div class="grupo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" placeholder="Digite seu bairro" class="texto" id="bairro">
+                </div>
+                <div class="grupo">
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" class="lista">
+                        <option value="1">Barra Bonita</option>
+                        <option value="2">Igaraçu do Tietê</option>
+                        <option value="3">Bauru</option>
+                        <option value="4">Jaú</option>
+                        <option value="5">Botucatu</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label for="genero">Gênero:</label>
+                    <select id="generp" class="lista">
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outros</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <fieldset class="ingles">
+                        <legend>Inglês</legend>
+                        <label for="ingles">Inglês:</label>
+                        <input type="radio" name="ingles" value="1">Básico
+                        <input type="radio" name="ingles" value="2">Intermediário
+                        <input type="radio" name="ingles" value="3">Avançado
+                    </fieldset>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
